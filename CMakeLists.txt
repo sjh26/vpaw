@@ -9,6 +9,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set (EP_GIT_PROTOCOL "https")
 
+# this line affects the rest of the slicer superbuild
+set(Slicer_USE_GIT_PROTOCOL OFF)
+
 # Slicer sources
 include(FetchContent)
 if(NOT DEFINED slicersources_SOURCE_DIR)
